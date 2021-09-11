@@ -6,7 +6,8 @@ After cloning the repository. run this command on your terminal
 3) npm run dev
 4) php artisan serve (default Laravel development server: http://127.0.0.1:8000 )
     NOTES : if you are using custom host and port please change the API baseUrl in 'App\resources\js\http-common.js'
-5) create mysql database name 'laravel'
+6) create .env file and copy the config in .env.example
+5) then create mysql database name 'laravel'
 6) php artisan migrate --seed
 
 Default Admin credentials
