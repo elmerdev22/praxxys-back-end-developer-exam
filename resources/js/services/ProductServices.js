@@ -22,9 +22,9 @@ class ProductServices {
         }
     }
     
-    async addProduct(data, config) {
+    async createProduct(data, config) {
         try {
-            const response = await http.post(`products/add`, data, config);
+            const response = await http.post(`products/create`, data, config);
             return response;
         } catch (error) {
             console.error("Error", error.response);

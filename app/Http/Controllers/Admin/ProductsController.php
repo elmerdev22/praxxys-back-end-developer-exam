@@ -13,9 +13,9 @@ class ProductsController extends Controller
         return view('admin.products.index', compact('categories'));
     }
 
-    public function add(){
+    public function create(){
         $categories = self::categories();
-        return view('admin.products.add', compact('categories'));
+        return view('admin.products.create', compact('categories'));
     }
 
     public function edit($id){

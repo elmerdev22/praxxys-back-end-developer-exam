@@ -19,7 +19,7 @@
                     <div class="card-header">
                         <h3 class="card-title">Product Lists</h3>
                         <div class="card-tools">
-                            <a href="{{route('admin.products.add')}}" class="btn btn-success btn-sm"><span class="fas fa-plus"></span> Add Products</a>
+                            <a href="{{route('admin.products.create')}}" class="btn btn-success btn-sm"><span class="fas fa-plus"></span> Create</a>
                         </div>
                     </div>
                     <div class="card-body">

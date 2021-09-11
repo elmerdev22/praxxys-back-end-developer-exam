@@ -1,12 +1,12 @@
 @extends('admin.layout')
-@section('title', 'Product Add')
+@section('title', 'Product Create')
 @section('page_header')
     @php 
         $page_header = [
             'title'       => 'Products',
             'breadcrumbs' => [
                 ['url' => route('admin.products.index'), 'label' => 'Products'],
-                ['url' => '', 'label' => 'Add'],
+                ['url' => '', 'label' => 'Create'],
             ],
         ];
     @endphp
@@ -21,7 +21,7 @@
                         <h3 class="card-title">Product Requirements</h3>
                     </div>
                     <div class="card-body">
-                        <product-add :categories='@json($categories)' />
+                        <product-create :categories='@json($categories)' />
                     </div>
                 </div>
             </div>

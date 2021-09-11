@@ -9,7 +9,7 @@ Route::group(['prefix' => 'products'], function (){
 
     Route::get('/', [ProductsController::class, 'index']);
     Route::delete('/delete/{id}', [ProductsController::class, 'delete']);
-    Route::post('/add', [ProductsController::class, 'add']);
+    Route::post('/create', [ProductsController::class, 'create']);
     Route::get('/edit/{id}', [ProductsController::class, 'edit']);
     Route::post('/update/{id}', [ProductsController::class, 'update']);
     

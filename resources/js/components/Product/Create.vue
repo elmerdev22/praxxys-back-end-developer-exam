@@ -66,7 +66,7 @@
                         </div>
                         <div class="col-12">
                             <div class="row justify-content-center">
-                                <div class="col-md-3 text-center" v-for="item, index in previewList" :key="index">
+                                <div class="col-md-2 text-center" v-for="item, index in previewList" :key="index">
                                     <div class="border p-2">
                                         <img :src="item" class="img-fluid" />
                                     </div>
@@ -117,7 +117,7 @@
     import ProductServices from "../../services/ProductServices";
     import { VueEditor } from "vue2-editor";
 
-    const Add = {
+    const Create = {
         props: ['categories'],
         components : {
             VueEditor
@@ -226,7 +226,7 @@
                 data.append('category', this.data.category);
                 data.append('datetime', this.data.datetime);
 
-                const response = await ProductServices.addProduct(data, config);
+                const response = await ProductServices.createProduct(data, config);
                 if(response){
                     this.$swal.close();
                     const data = response.data;
@@ -247,5 +247,5 @@
         }
     }
 
-    export default Add;
+    export default Create;
 </script>

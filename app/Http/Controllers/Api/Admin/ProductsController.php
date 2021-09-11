@@ -23,6 +23,8 @@ class ProductsController extends Controller
 			$filter['where']['products.category_id'] = $request->category;
 		}
 
+        $filter['order_by'] = 'created_at desc';
+
         $data = QueryUtility::products($filter)->paginate(10);
 
         return response()->json($data, 200);      
@@ -33,7 +35,7 @@ class ProductsController extends Controller
         return response()->json($data);      
     }
 
-    public function add(Request $request){
+    public function create(Request $request){
        
         $response = ['success' => false, 'message' => ''];
         
@@ -57,7 +59,7 @@ class ProductsController extends Controller
                     }
                 }
                 $response['success'] = true;
-                $response['message'] = 'Successfully Added';
+                $response['message'] = 'Successfully Created!';
             }
         }catch(\Exception $e){
             $response['message'] = $e;

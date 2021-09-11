@@ -13,7 +13,7 @@ Vue.use(VueSweetalert2);
 // Products
 Vue.component('pagination', require('laravel-vue-pagination'));
 Vue.component('product-list', require('./components/Product/List.vue').default);
-Vue.component('product-add', require('./components/Product/Add.vue').default);
+Vue.component('product-create', require('./components/Product/Create.vue').default);
 Vue.component('product-edit', require('./components/Product/Edit.vue').default);
 
 // Videos

@@ -38,9 +38,9 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{route('admin.products.add')}}" class="nav-link {{Route::is('admin.products.add') ? 'active':''}}">
+                            <a href="{{route('admin.products.create')}}" class="nav-link {{Route::is('admin.products.create') ? 'active':''}}">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Add</p>
+                                <p>Create</p>
                             </a>
                         </li>
                     </ul>
