@@ -17,13 +17,13 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label for="name">First Name*</label>
+                                <label for="name">Name*</label>
                                 <input type="text" v-model="data.name" name="name" class="form-control" placeholder="name">
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-group">
-                                <label>Categories*</label>
+                                <label>Category*</label>
                                 <select v-model="data.category" class="form-control">
                                     <option value="">Select</option>
                                     <option v-for="(item, index) in categories" :value="index" :key="index">{{item}}</option>
