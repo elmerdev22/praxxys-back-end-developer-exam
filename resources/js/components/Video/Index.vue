@@ -35,19 +35,19 @@
                 renderComponent: true,
                 videoLists     : [
                     {
-                        url     : "http://127.0.0.1:8000/videos/video1.mp4",
+                        url     : "/videos/video1.mp4",
                         name    : 'Video 1',
                         autoplay: false,
                         controls: false
                     },
                     {
-                        url     : "http://127.0.0.1:8000/videos/video2.mp4",
+                        url     : "/videos/video2.mp4",
                         name    : 'Video 2',
                         autoplay: false,
                         controls: false
                     },
                     {
-                        url     : "http://127.0.0.1:8000/videos/video3.mp4",
+                        url     : "/videos/video3.mp4",
                         name    : 'Video 3',
                         autoplay: false,
                         controls: false
